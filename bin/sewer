@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var package = require('../package.json')
+  , program = require('commander')
+  , sewer = require('..')
+
+// CLI
+
+program
+  .version(package.version)
+  .usage('[options] <files>')
+  .option('-r, --root <root>', 'root directory to lookup source images')
+  .option('-o, --out <out>', 'output directory for processed files')
+  .parse(process.argv);
+
+if (!program.args.length) {
+  console.error();
+  console.error("  error: missing required argument `<files>'");
+  console.error();
+  process.exit(1);
+}
+
+// Run sewer
+
+sewer(program.args, {
+  rootDirPath: program.root
+, outDirPath: program.out
+});

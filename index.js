@@ -1,1 +1,1 @@
-require('./lib/sewer');
+module.exports = require('./lib/sewer');

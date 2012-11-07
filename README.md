@@ -1,5 +1,5 @@
-Sewer
------
+Tailor
+------
 
 CSS Sprites Generator.
 
@@ -7,17 +7,17 @@ Installation
 ------------
 
   Sprites generation is built on top of the [node-canvas](https://github.com/LearnBoost/node-canvas)
-  which requires the __Cairo__ to be installed. For system-specific installation view the
+  which requires the __Cairo__. For system-specific installation view the
   [Wiki](https://github.com/LearnBoost/node-canvas/wiki/_pages).
 
-    $ npm install
+    $ npm install -g tailor
 
 Usage
 -----
 
-    $ ./sewer -h
+    $ tailor -h
 
-    Usage: sewer [options] <files>
+    Usage: tailor [options] <files>
 
     Options:
 

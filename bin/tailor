@@ -6,7 +6,7 @@
 
 var package = require('../package.json')
   , program = require('commander')
-  , sewer = require('..')
+  , tailor = require('..')
 
 // CLI
 
@@ -24,9 +24,9 @@ if (!program.args.length) {
   process.exit(1);
 }
 
-// Run sewer
+// Run tailor
 
-sewer(program.args, {
+tailor(program.args, {
   rootDirPath: program.root
 , outDirPath: program.out
 });

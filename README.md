@@ -25,3 +25,8 @@ Usage
       -V, --version      output the version number
       -r, --root <root>  root directory to lookup source images
       -o, --out <out>    output directory for processed files
+
+License
+-------
+
+[MIT](http://en.wikipedia.org/wiki/MIT_License#License_terms). Copyright (c) 2012 Serge Borbit &lt;serge.borbit@gmail.com&gt;

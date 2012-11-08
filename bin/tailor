@@ -29,4 +29,11 @@ if (!program.args.length) {
 tailor(program.args, {
   rootDirPath: program.root
 , outDirPath: program.out
+}, function(err) {
+  if (err) {
+    console.error();
+    console.error("  error: %s", err.message);
+    console.error();
+    process.exit(1);
+  }
 });

@@ -63,16 +63,16 @@ First I have to do is to add additional, vendor-prefixed properties to tell Tail
       -tailor-type: compact;
     }
 
-  - `-tailor-type`
+  * `-tailor-type`
 
     Sprite type. Can be `horizontal`, `vertical` or `compact`.
 
-  - `-tailor-group`
+  * `-tailor-group`
 
     To group images into the separate sprite (optional). Default: `all`.
 
 
-  All my images are in the `./images` directory and I want to put sprites and processed css file to the `./result` directory.
+All my images are in the `./images` directory and I want to put sprites and processed css file to the `./result` directory.
 
   With command line:
 

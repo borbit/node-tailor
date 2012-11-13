@@ -6,16 +6,16 @@ CSS Sprites Generator.
 Installation
 ------------
 
-  Sprites generation is built on top of the [node-canvas](https://github.com/LearnBoost/node-canvas)
-  which requires the __Cairo__. For system-specific installation view the
-  [Wiki](https://github.com/LearnBoost/node-canvas/wiki/_pages).
+Sprites generation is built on top of the [node-canvas](https://github.com/LearnBoost/node-canvas)
+which requires the __Cairo__. For system-specific installation view the
+[Wiki](https://github.com/LearnBoost/node-canvas/wiki/_pages).
 
     $ npm install -g tailor
 
 Usage
 -----
 
-  I have a `styles.css` and I want all background images to be automaticaly sewed into a css sprite.
+I have a `styles.css` and I want all background images to be automaticaly sewed into a css sprite.
 
     .link {
       display: block;
@@ -39,16 +39,7 @@ Usage
       background-image: url("icon-vk.png");
     }
 
-  First I have to do is to add additional, vendor-prefixed properties to tell Tailor how the sprite should be sewed:
-
-  - `-tailor-type`
-
-    Sprite type. Can be `horizontal`, `vertical` or `compact`.
-
-  - `-tailor-group`
-
-    To group images into the separate sprite (optional). Default: `all`.
-
+First I have to do is to add additional, vendor-prefixed properties to tell Tailor how the sprite should be sewed:
 
     ...
 
@@ -71,6 +62,15 @@ Usage
       background-image: url("icon-vk.png");
       -tailor-type: compact;
     }
+
+  - `-tailor-type`
+
+    Sprite type. Can be `horizontal`, `vertical` or `compact`.
+
+  - `-tailor-group`
+
+    To group images into the separate sprite (optional). Default: `all`.
+
 
   All my images are in the `./images` directory and I want to put sprites and processed css file to the `./result` directory.
 

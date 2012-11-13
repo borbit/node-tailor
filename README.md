@@ -49,6 +49,7 @@ Usage
 
     To group images into the separate sprite (optional). Default: `all`.
 
+
     ...
 
     .link-facebook {
@@ -91,8 +92,10 @@ Usage
       console.log('Sewed!');
     });
 
-  As a result there will be a sprite file and processed `styles.css` file in the `result` directory.
-
+  As a result there will be a sprite file and processed `styles.css` file in the `./result` directory.
+	
+    ...
+    
     .link-facebook {
       background-image: url("1a29b94c7137b58.png");
       background-position: 0px 0px

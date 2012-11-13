@@ -8,5 +8,12 @@
     "commander": "*",
     "canvas": "*",
     "css": "*"
-  }
+  },
+  "bin": {
+    "tailor": "./bin/tailor"
+  },
+  "keywords": [
+    "sprite",
+    "css"
+  ],
 }
